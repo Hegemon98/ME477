@@ -4,11 +4,10 @@ This repo serves the purpose of the ME477 ROS final. It was created through tuto
 
 ## Requirements
 
-The text assumes the use of ROS Melodic Morenia and Ubuntu 18.04.4 LTS (Bionic Beaver). Instructions for installing this development environment are included in the text.
-
+These packages were made for use with ROS Melodic Morenia and Ubuntu 18.04.4 LTS (Bionic Beaver) in accordance with the the text [ricopic.one/robotics](http://ricopic.one/robotics)
 ## Installation
 
-To make the packages available within a ROS distribution, complete the following steps.
+To make these packages available within a ROS distribution, complete the following steps.
 
 1. Create a ROS workspace with a `src` directory.
 2. Download and unzip or clone this repository to the `src` directory.
