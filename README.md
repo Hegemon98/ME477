@@ -13,7 +13,7 @@ To make the packages available within a ROS distribution, complete the following
 1. Create a ROS workspace with a `src` directory.
 2. Download and unzip or clone this repository to the `src` directory.
 ```bash
-git clone https://github.com/ricopicone/robotics-book-code.git
+git clone https://github.com/Hegemon98/ME477.git
 ```
 3. In the workspace, make.
 ```bash
