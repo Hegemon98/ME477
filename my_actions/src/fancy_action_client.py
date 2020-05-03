@@ -6,7 +6,7 @@ import actionlib # for actions
 from my_actions.msg import TimerAction, TimerGoal, TimerResult, TimerFeedback
 
 
-def feedback_cb(feedback): 	# feedback callback function
+def the_feedback_cb(feedback): 	# feedback callback function
     print('[Feedback] Time elapsed: %f' % (feedback.time_elapsed.to_sec()))
     print('[Feedback] Time remaining: %f' % (feedback.time_remaining.to_sec()))
 
@@ -21,7 +21,7 @@ goal.time_to_wait = rospy.Duration.from_sec(5.0) # set field
 # Uncomment this line to test server-side abort:
 #goal.time_to_wait = rospy.Duration.from_sec(500.0)
 
-client.send_goal(goal, feedback_cb=feedback_cb) # send goal
+client.send_goal(goal, feedback_cb=the_feedback_cb) # send goal
 # Uncomment these lines to test goal preemption:
 #time.sleep(3.0)
 #client.cancel_goal()
