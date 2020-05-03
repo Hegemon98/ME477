@@ -3,7 +3,7 @@
 import rospy
 import time         # for regular Python timing
 import actionlib    # for actions
-from my_actions.msg import TimerAction, TimerResult, TimerFeedback
+from my_actions.msg import TimerAction, TimerResult, TimerFeedback, TimerGoal
 
 
 def do_timer(goal):     #action function

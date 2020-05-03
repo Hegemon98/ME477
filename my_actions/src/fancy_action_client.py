@@ -3,7 +3,7 @@
 import rospy
 import time 	# for regular python timing
 import actionlib # for actions
-from my_actions.msg import TimerAction, TimerGoal
+from my_actions.msg import TimerAction, TimerGoal, TimerResult, TimerFeedback
 
 
 def feedback_cb(feedback): 	# feedback callback function
