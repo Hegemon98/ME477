@@ -1,6 +1,0 @@
-<launch>
-  <node name="service_client" pkg="my_topics" type="service_client.py" output="screen"/>
-
-  <node name="service_server" pkg="my_topics" type="service_server.py" output="screen"/>
-
-</launch>
