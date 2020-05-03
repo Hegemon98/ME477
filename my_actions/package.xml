@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>my_actions</name>
-  <version>0.0.0</version>
-  <description>The my_actions package</description>
+  <version>1.0.0</version>
+  <description>The my_actions package for the ME477 Final Submission</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
   <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
-  <maintainer email="conner@todo.todo">conner</maintainer>
+  <maintainer email="conner.snow98@gmail.com">Conner Snow</maintainer>
 
 
   <!-- One license tag required, multiple allowed, one license per tag -->
@@ -19,14 +19,18 @@
   <!-- Url tags are optional, but multiple are allowed, one per tag -->
   <!-- Optional attribute type can be: website, bugtracker, or repository -->
   <!-- Example: -->
-  <!-- <url type="website">http://wiki.ros.org/my_actions</url> -->
+  <url type="repository">https://github.com/Hegemon98/ME477</url> -->
 
 
   <!-- Author tags are optional, multiple are allowed, one per tag -->
   <!-- Authors do not have to be maintainers, but could be -->
   <!-- Example: -->
   <!-- <author email="jane.doe@example.com">Jane Doe</author> -->
-
+  <author>Conner Snow</author>
+  <author>Rico Picone</author>
+  <author>Morgan Quigley</author>
+  <author>Brian Gerkey</author>
+  <author>William D. Smart</author>
 
   <!-- The *depend tags are used to specify dependencies -->
   <!-- Dependencies can be catkin packages or system dependencies -->
