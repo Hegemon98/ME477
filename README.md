@@ -25,15 +25,18 @@ source devel/setup.bash
 ```
 # ROS package: my_topics
 The my_topics package contains four nodes:
-1. message_publisher.py
-2. message_subscriber.py
-3. topic_publisher.py
-4. topic_subscriber.py
-## Getting started
+1. message_publisher.py: this node publishes a message with an imaginary and a real value
+2. message_subscriber.py: this node subscribes to message_publisher.py and displays the recieved values in the terminal
+3. topic_publisher.py: this node publishes a topic called counter which increments upward after every publish
+4. topic_subscriber.py: this node subscribes to topic_publisher.py and dispays the recieved values in the terminal
+### Getting started with my_topics
+```bash
+roslaunch my_topics topics.launch
+```
 
 |A short guide to using your package. Include important commands, etc.|
 
-## Usage
+### Usage
 
 |Usage information for key methods and commands.|
 
