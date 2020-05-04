@@ -54,18 +54,28 @@ It should be noted that the subscriber files will not be functional without also
 
 # ROS package: my_services
 The my_services package contains two nodes:
-1. service_client.py: this node
-2. service_server.py: this node
+1.service_client.py: this node accepts strings of characters from the user via the command line, counts the number of words, and outputs the result.
+2.service_server.py: this node contains a service called word_count which is used by service_client.py to count the number of input words. 
+
 These nodes are usefull in demonstrating basic service node functionality and communication and can be used as starting points for more advanced use cases.
 ### Getting started with my_services
 ```bash
 roslaunch my_services services.launch input:='<insert text here>'
 ```
-Using the above launch command, the two nodes within this package will launch and begin printing to the terminal. 
-
+Using the above launch command, the two nodes within this package will launch and begin printing to the terminal. Expected output should resemble the following:
+```bash
+user input has 2 words
+```
+For individual usage of these nodes the following command format may be used with roscore running in another terminal.
+```bash
+rosrun <package name> <node name> <user input>
+```
+Example:
+```bash
+rosrun my_services service_client.py hello world
+```
 ### Usage
-
-|Usage information for key methods and commands.|
+It should be noted that the user input argument should only be used when calling the client.
 
 # ROS package: my_actions
 
