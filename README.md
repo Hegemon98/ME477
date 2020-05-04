@@ -29,6 +29,8 @@ The my_topics package contains four nodes:
 2. message_subscriber.py: this node subscribes to message_publisher.py and displays the recieved values in the terminal
 3. topic_publisher.py: this node publishes a topic called counter which increments upward after every publish
 4. topic_subscriber.py: this node subscribes to topic_publisher.py and dispays the recieved values in the terminal
+
+These nodes are usefull in demonstrating basic topic and message node functionality and communication and can be used as starting points for more advanced use cases.
 ### Getting started with my_topics
 ```bash
 roslaunch my_topics topics.launch
@@ -41,20 +43,27 @@ roslaunch my_topics topics.launch
 |Usage information for key methods and commands.|
 
 # ROS package: my_services
-
-|Short introductory paragraph about your package. What does it do? Why is it useful?|
-## Getting started
-
+The my_services package contains two nodes:
+1. service_client.py: this node
+2. service_server.py: this node
+These nodes are usefull in demonstrating basic service node functionality and communication and can be used as starting points for more advanced use cases.
+### Getting started with my_services
+```bash
+roslaunch my_topics topics.launch
+```
 |A short guide to using your package. Include important commands, etc.|
 
-## Usage
+### Usage
 
 |Usage information for key methods and commands.|
 
 # ROS package: my_actions
 
 |Short introductory paragraph about your package. What does it do? Why is it useful?|
-## Getting started
+## Getting started with my_actions
+```bash
+roslaunch my_actions topics.launch
+```
 
 |A short guide to using your package. Include important commands, etc.|
 
