@@ -78,14 +78,19 @@ rosrun my_services service_client.py hello world
 It should be noted that the user input argument should only be used when calling the client.
 
 # ROS package: my_actions
-
+The my_actions package contains two nodes:
+1. fancy_action_client.py:
+2. fancy_action_server.py:
 |Short introductory paragraph about your package. What does it do? Why is it useful?|
 ### Getting started with my_actions
 ```bash
-roslaunch my_actions topics.launch
+roslaunch my_actions fancy_action.launch
 ```
-Using the above launch command, the two nodes within this package will launch and begin printing to the terminal. 
-
+Using the above launch command, the two nodes within this package will launch and begin printing to the terminal. Expected output should resemble the following:
+```bash
+[Feedback] Time elapsed: 0.000023
+[Feedback] Time remaining: 4.999977
+```
 ### Usage
 
 |Usage information for key methods and commands.|
