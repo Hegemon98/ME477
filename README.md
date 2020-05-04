@@ -79,9 +79,10 @@ It should be noted that the user input argument should only be used when calling
 
 # ROS package: my_actions
 The my_actions package contains two nodes:
-1. fancy_action_client.py:
-2. fancy_action_server.py:
-|Short introductory paragraph about your package. What does it do? Why is it useful?|
+1. fancy_action_client.py: this node communicates with fancy_action_server.py using the variables established in Timer.action located in my_actions/action. It also outputs recieved values to the terminal.
+2. fancy_action_server.py: this node returns the time elapsed and remaining time based on the goal.time_to_wait variable field within fancy_action_client.py. 
+
+These nodes are usefull in demonstrating uses of .action file functionality and can be used as a starting point for more advanced use cases.
 ### Getting started with my_actions
 ```bash
 roslaunch my_actions fancy_action.launch
@@ -92,5 +93,4 @@ Using the above launch command, the two nodes within this package will launch an
 [Feedback] Time remaining: 4.999977
 ```
 ### Usage
-
-|Usage information for key methods and commands.|
+The goal.time_to_wait variable field within fancy_action_client.py may be edited in order to increase the amount of time available for execution of these nodes. 
