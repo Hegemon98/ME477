@@ -35,12 +35,22 @@ These nodes are usefull in demonstrating basic topic and message node functional
 ```bash
 roslaunch my_topics topics.launch
 ```
-
-|A short guide to using your package. Include important commands, etc.|
-
+Using the above launch command, the four nodes within this package will launch and begin printing to the terminal. Expected output should resemble the following:
+```bash
+1
+Real: 0.021548465
+Imaginary: 0.984262465
+```
+For individual usage of these nodes the following command format may be used with roscore running in another terminal.
+```bash
+rosrun <package name> <node name>
+```
+Example:
+```bash
+rosrun my_topics topic_publisher.py
+```
 ### Usage
-
-|Usage information for key methods and commands.|
+It should be noted that the subscriber files will not be functional without also having their associated publisher file also running.
 
 # ROS package: my_services
 The my_services package contains two nodes:
@@ -49,9 +59,9 @@ The my_services package contains two nodes:
 These nodes are usefull in demonstrating basic service node functionality and communication and can be used as starting points for more advanced use cases.
 ### Getting started with my_services
 ```bash
-roslaunch my_topics topics.launch
+roslaunch my_services services.launch input:='<insert text here>'
 ```
-|A short guide to using your package. Include important commands, etc.|
+Using the above launch command, the two nodes within this package will launch and begin printing to the terminal. 
 
 ### Usage
 
@@ -60,13 +70,12 @@ roslaunch my_topics topics.launch
 # ROS package: my_actions
 
 |Short introductory paragraph about your package. What does it do? Why is it useful?|
-## Getting started with my_actions
+### Getting started with my_actions
 ```bash
 roslaunch my_actions topics.launch
 ```
+Using the above launch command, the two nodes within this package will launch and begin printing to the terminal. 
 
-|A short guide to using your package. Include important commands, etc.|
-
-## Usage
+### Usage
 
 |Usage information for key methods and commands.|
