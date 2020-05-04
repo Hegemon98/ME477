@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import rospy
-from rico_services.srv import WordCount
+from my_services.srv import WordCount
 import sys
 
 rospy.init_node('service_client')
