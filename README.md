@@ -54,8 +54,8 @@ It should be noted that the subscriber files will not be functional without also
 
 # ROS package: my_services
 The my_services package contains two nodes:
-1.service_client.py: this node accepts strings of characters from the user via the command line, counts the number of words, and outputs the result.
-2.service_server.py: this node contains a service called word_count which is used by service_client.py to count the number of input words. 
+1. service_client.py: this node accepts strings of characters from the user via the command line, counts the number of words, and outputs the result.
+2. service_server.py: this node contains a service called word_count which is used by service_client.py to count the number of input words. 
 
 These nodes are usefull in demonstrating basic service node functionality and communication and can be used as starting points for more advanced use cases.
 ### Getting started with my_services
