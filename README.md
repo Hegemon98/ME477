@@ -64,7 +64,7 @@ roslaunch my_services services.launch input:='<insert text here>'
 ```
 Using the above launch command, the two nodes within this package will launch and begin printing to the terminal. Expected output should resemble the following:
 ```bash
-user input has 2 words
+user input--> has 2 words
 ```
 For individual usage of these nodes the following command format may be used with roscore running in another terminal.
 ```bash
@@ -75,7 +75,7 @@ Example:
 rosrun my_services service_client.py hello world
 ```
 ### Usage
-It should be noted that the user input argument should only be used when calling the client.
+It should be noted that the user input argument should only be used when calling the client. Additionally, strings containing a double underscore __ will be filtered out and therefore should not be entered into this node. This is done to filter out extra command line entries that occur when using this node within a launch file.
 
 # ROS package: my_actions
 The my_actions package contains two nodes:
