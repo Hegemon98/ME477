@@ -15,4 +15,3 @@ words = ' '.join(words_list) # parse args
 word_count = word_counter(words) # use service
 
 print(words+'--> has '+str(word_count.count)+' words')
-print(words_list)
